@@ -1,0 +1,77 @@
+:root {
+    font-size: 10px;
+    --gradient: linear-gradient(#6f0000, #200122);
+    --main-background: rgba(0 0 0 / .25);
+    --box-shadow: 1rem 1rem 3rem black;
+    --text: #338FFF;
+    --text-shadow: .1rem .1rem .5rem black;
+    --checkbox: rgba(0 0 0 / .25);
+    --checkbox-hover: rgba(30 30 30 / .25);
+}
+
+body {
+    background: var(--gradient);
+    min-height: 100vh;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: grid;
+    width: 55vh;    /* Rendere responsive all'ingrandimento della pagina */
+    height: 55vh;
+    margin: 0 auto;
+    background-color: var(--main-background);
+    border-radius: 10%;
+    box-shadow: var(--box-shadow);
+}
+
+h1 {    /* Da migliorare */
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: var(--text);
+    text-shadow: var(--text-shadow);
+    text-align: center;
+    margin: 4rem;
+}
+
+button {
+    display: block;
+    width: 25vh;
+    height: 5vh;
+    margin: 3rem auto;
+    background-color: var(--main-background);  
+    border-radius: 10%;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    color: var(--text);
+    text-shadow: (--text-shadow);
+    cursor: pointer;
+}
+
+section {
+    display: grid;
+    gap: 0;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    width: 45vh;
+    height: 45vh;
+}
+
+input[type="checkbox"] {
+    width: 15vh;
+    height: 15vh;
+    background-color: var(--checkbox);
+    border: 2px solid black;
+    border-radius: 7.5%;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+input[type="checkbox"]:hover {
+    background-color: var(--checkbox-hover);
+}
+
+input[type="checkbox"]:checked {
+
+}
